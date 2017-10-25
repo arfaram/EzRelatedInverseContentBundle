@@ -1,0 +1,14 @@
+system:
+    default:
+        yui:
+            modules:
+                ez-tabrelationinverseview:
+                    requires: ['plugin', 'base', 'ez-pluginregistry','ez-locationviewrelationsinversetabview']
+                    dependencyOf: ['ez-locationviewview']
+                    path: 'bundles/ezrelatedinversecontent/js/views/ez-tabrelationinverseview.js'
+                ez-locationviewrelationsinversetabview:
+                    requires: ['ez-locationviewtabview', 'ez-translator', 'locationviewrelationsinversetabview-ez-template']
+                    path: 'bundles/ezrelatedinversecontent/js/views/tabs/ez-locationviewrelationsinversetabview.js'
+                locationviewrelationsinversetabview-ez-template:
+                    type: 'template'
+                    path: 'bundles/ezrelatedinversecontent/templates/tabs/relationsinverse.hbt'

@@ -1,0 +1,5 @@
+system:
+    default:
+        css:
+            files:
+                - bundles/ezrelatedinversecontent/css/tabs/relationsinverse.css

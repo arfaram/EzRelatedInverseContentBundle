@@ -1,0 +1,4 @@
+services:
+#    ez_related_inverse_content.example:
+#        class: Ez\RelatedInverseContentBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

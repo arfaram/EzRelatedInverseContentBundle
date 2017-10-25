@@ -1,0 +1,3 @@
+ez_related_inverse_content_homepage:
+    path:     /contentinverserelations/{id}
+    defaults: { _controller: EzRelatedInverseContentBundle:ContentRelationInverse:loadRelatedInverseRealtions }

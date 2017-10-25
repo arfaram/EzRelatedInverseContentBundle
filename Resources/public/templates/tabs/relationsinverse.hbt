@@ -1,0 +1,54 @@
+<div class="ez-relations-box">
+    <h2  class="ez-relations-box-title">{{ translate 'Related Inverse Content' 'relationsinverse' }}</h2>
+
+    <div class="ez-relations-box-list">
+        {{#if items}}
+        <table class="ez-relations-box-table ez-asynchronousview pure-table pure-table-bordered">
+            <thead>
+            <tr>
+                <th>{{ translate 'Related Inverse Content' 'relationsinverse' }}</th>
+                <th>{{ translate 'Content Location' 'relationsinverse' }}</th>
+                <th>{{ translate 'Content Type' 'relationsinverse' }}</th>
+                <th>{{ translate 'Type' 'relationsinverse' }}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each items}}
+            <tr>
+                <td>
+                    <ul class="ez-breadcrumbs-list">
+
+                        <li class="ez-breadcrumbs-item">
+                            <a  title="{{ name }}"
+                                href="{{ link }}">
+                                {{ name}}
+                            </a>
+                        </li>
+                    </ul>
+
+                </td>
+                <td>
+
+                    {{ locationRoute}}
+
+                </td>
+                <td>
+
+                    {{ contentTypeName }} (id:{{ contentTypeId }})
+
+                </td>
+                <td>
+
+                    {{ type }}
+
+                </td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        {{else}}
+        <p class="ez-relations-box-list-no-content">{{ translate 'This content has no related content.' 'relationsinverse' }}</p>
+        {{/if}}
+    </div>
+
+</div>
