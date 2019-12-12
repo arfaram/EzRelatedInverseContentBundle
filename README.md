@@ -1,7 +1,8 @@
+eZPlatform 1.x 
+== THIS BUNDLE IS NOT FOR PRODUCTION USE ==
+
 # RelatedInverseContentBundle
 This is a dev Bundle to add new content detail tab where you can get more information about related inverse content.
-
-== THIS BUNDLE IS NOT FOR PRODUCTION USE ==
 
 ## Install
 
